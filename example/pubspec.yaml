@@ -1,0 +1,27 @@
+name: whatsapp_based_verification_example
+description: "Demonstrates how to use the whatsapp_based_verification plugin."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  whatsapp_based_verification:
+    path: ../
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true

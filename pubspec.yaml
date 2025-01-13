@@ -1,0 +1,35 @@
+name: whatsapp_based_verification
+description: "flutter_whatsapp_verification: Simplify integrating WhatsApp-based verification 
+into your Flutter apps with this powerful plugin. Allowing your app to send verification messages to users effortlessly. 
+By leveraging WhatsApp's communication capabilities, this plugin helps reduce dependency on costly SMS services, 
+ and minimizes waste by ensuring the user initiates the verification process.
+ With a simple API and platform abstraction, 
+ you can focus on building core app features while delivering a secure and efficient verification experience to your users."
+version: 0.0.1
+author: Mahmoud Hamed <mhamed@victorylink.com>
+homepage:
+
+environment:
+  sdk: ^3.5.2
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# The following section is specific to Flutter packages.
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.victorylink.whatsapp_based_verification
+        pluginClass: WhatsappBasedVerificationPlugin
+      ios:
+        pluginClass: WhatsappBasedVerificationPlugin
