@@ -5,7 +5,7 @@ By leveraging WhatsApp's communication capabilities, this plugin helps reduce de
  and minimizes waste by ensuring the user initiates the verification process.
  With a simple API and platform abstraction, 
  you can focus on building core app features while delivering a secure and efficient verification experience to your users."
-version: 0.0.1
+version: 0.1.0
 author: Mahmoud Hamed <mhamed@victorylink.com>
 homepage:
 
