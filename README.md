@@ -16,7 +16,7 @@ With a simple API and platform abstraction, you can focus on building core app f
 
 ## Technical Details
 
-## 1. Introduction	
+# 1. Introduction	
 
 The Content-Based Verification plugin streamlines the process of integrating WhatsApp-based verification into Flutter apps. It abstracts platform-specific complexities, enabling seamless sending of verification codes via WhatsApp while you focus on delivering your app's core functionalities. By leveraging WhatsApp, this plugin helps reduce reliance on traditional SMS, lowering costs and enhancing user experience. It ensures efficient delivery of OTPs directly to the user's WhatsApp account, making it a cost-effective and user-friendly solution for modern verification workflows.
 
