@@ -69,7 +69,7 @@ Key features of the plugin include:
 
 **• Failure:** If WhatsApp fails to launch, the plugin notifies the app of the failure, prompting an error message to the user (e.g., "Failed to launch WhatsApp").
 
-   <img width="577" alt="image" src="https://github.com/user-attachments/assets/aaad3b78-742b-485f-86b7-ccf3653f3ffc" />
+   <img width="577" hight= "800" alt="image" src="https://github.com/user-attachments/assets/aaad3b78-742b-485f-86b7-ccf3653f3ffc" />
 
  
 
