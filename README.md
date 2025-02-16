@@ -8,9 +8,9 @@ With a simple API and platform abstraction, you can focus on building core app f
 
 **Plugin input parameters from the mobile app developer:**
 
- [message]: The verification message will be sent to the WhatsApp phone number from your app through whatsapp_based_verification.\n
- [phoneNumber]: The recipient's phone number./n
- [callback]: A callback function to handle the result of the message operation.
+ 	[message]: The verification message will be sent to the WhatsApp phone number from your app through whatsapp_based_verification.
+ 	[phoneNumber]: The recipient's phone number.
+ 	[callback]: A callback function to handle the result of the message operation.
 
 **For more information or if you need any support, please communicate via email:**
 
