@@ -131,6 +131,7 @@ It offers:
 
 ![Picture5](https://github.com/user-attachments/assets/8f50d5e9-4f3e-4602-a518-e65e3c591730)
 
+
 **• IWhatsappLauncherService:** An abstract interface for launching WhatsApp with a pre-filled message.  
 
 **• launch Method:** This method defines the contract for launching WhatsApp with a specified message and phone number. It requires a callback function to handle the result of the operation.  
@@ -138,7 +139,7 @@ It offers:
  ![Picture6](https://github.com/user-attachments/assets/bbd6f8b5-6d9f-40db-86f0-bfc9d17ee858)
 
 
-**• WhatsappLauncherService: A service responsible for launching WhatsApp with a pre-filled message.  
+**• WhatsappLauncherService:** A service responsible for launching WhatsApp with a pre-filled message.  
 • Implements the IWhatsappLauncherService interface.  
 • Uses the WhatsAppUrlGenerator to create the deep link and attempts to launch WhatsApp.  
 • Returns the result via a callback function, using the WhatsAppMessageResultHandler to process the result.  
