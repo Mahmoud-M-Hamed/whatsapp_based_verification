@@ -18,28 +18,28 @@ With a simple API and platform abstraction, you can focus on building core app f
 
 **1. Introduction**
 
-The Content-Based Verification plugin streamlines the process of integrating WhatsApp-based verification into Flutter apps. 
-It abstracts platform-specific complexities, enabling seamless sending of verification codes via WhatsApp while you focus on delivering your app's core functionalities. 
-By leveraging WhatsApp, this plugin helps reduce reliance on traditional SMS, lowering costs and enhancing user experience. 
-It ensures efficient delivery of OTPs directly to the user's WhatsApp account, making it a cost-effective and user-friendly solution for modern verification workflows.
+The Content-Based Verification plugin streamlines the process of integrating WhatsApp-based verification into Flutter apps.  
+It abstracts platform-specific complexities, enabling seamless sending of verification codes via WhatsApp while you focus on delivering your app's core functionalities.  
+By leveraging WhatsApp, this plugin helps reduce reliance on traditional SMS, lowering costs and enhancing user experience.  
+It ensures efficient delivery of OTPs directly to the user's WhatsApp account, making it a cost-effective and user-friendly solution for modern verification workflows.  
 
 
 **1.1 Scope of Work**
 	
-This solution leverages WhatsApp to optimize phone number verification costs, eliminating the need for traditional SMS and reducing expenses for OTP services and international messaging. It ensures efficient, free delivery of verification codes for both businesses and users, eliminating resource wastage and enabling businesses to maintain a sustainable and modern verification strategy. As the service is free, it creates a cost-neutral solution for all parties involved, seamlessly integrating into existing systems to enhance user experience.
+This solution leverages WhatsApp to optimize phone number verification costs, eliminating the need for traditional SMS and reducing expenses for OTP services and international messaging.  
+It ensures efficient, free delivery of verification codes for both businesses and users, eliminating resource wastage and enabling businesses to maintain a sustainable and modern verification strategy.  
+As the service is free, it creates a cost-neutral solution for all parties involved, seamlessly integrating into existing systems to enhance user experience.
 
 
 **2. Purpose of the Plugin**
 
-The WhatsApp Verification plugin simplifies the integration of WhatsApp-based OTP verification in Flutter apps, enabling businesses to implement a modern solution. It is designed to:
+The WhatsApp Verification plugin simplifies the integration of WhatsApp-based OTP verification in Flutter apps, enabling businesses to implement a modern solution.  
 
-**1. Cost-Free Verification:** Provides a completely free solution for OTP verification, benefiting both businesses and users by eliminating expenses associated with SMS.
-
-**2. Cross-Platform Support:** Ensures seamless functionality across devices with a single codebase, avoiding platform-specific complexities.
-
-**3. Effortless Integration:** Allows developers to add WhatsApp-based verification features without requiring extensive knowledge of native code.
-
-**4. Improved Efficiency:** Speeds up the implementation process, enabling rapid deployment of secure and reliable phone number verification for user authentication.
+It is designed to:
+**1. Cost-Free Verification:** Provides a completely free solution for OTP verification, benefiting both businesses and users by eliminating expenses associated with SMS.  
+**2. Cross-Platform Support:** Ensures seamless functionality across devices with a single codebase, avoiding platform-specific complexities.  
+**3. Effortless Integration:** Allows developers to add WhatsApp-based verification features without requiring extensive knowledge of native code.  
+**4. Improved Efficiency:** Speeds up the implementation process, enabling rapid deployment of secure and reliable phone number verification for user authentication.  
 
 
 
