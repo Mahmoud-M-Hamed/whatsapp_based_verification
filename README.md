@@ -54,7 +54,7 @@ Key features of the plugin include:
 
 
 
-**4.Plugin Diagram**
+**4. Plugin Diagram**
 
 **Message Generation:**  
 • The plugin generates a pre-filled WhatsApp verification message, using the (WhatsAppUrlGenerator) class. This ensures the message includes all necessary information (e.g., OTP or verification code).  
@@ -65,7 +65,7 @@ Key features of the plugin include:
 • Once the URL is prepared, the (WhatsAppLauncherService) attempts to launch the native WhatsApp app. This opens WhatsApp directly, pre-filled with the verification message.  
 
 **Platform Support:**  
-•The plugin is cross-platform and works on both Android and iOS devices.  
+• The plugin is cross-platform and works on both Android and iOS devices.  
 
 **Status Feedback:**  
 **• Success:** If WhatsApp launches successfully, the plugin notifies the app via a callback, enabling the user to proceed with verification.  
@@ -81,11 +81,11 @@ Key features of the plugin include:
 The WhatsApp Verification plugin is structured to deliver a clean, organized, and modular approach to handling WhatsApp-based OTP verification in Flutter applications.  
 Here’s a detailed explanation of the key components, their architecture, and functionalities included in the codebase:  
 
-**5.1Plugin Structure:**
+**5.1 Plugin Structure:**
 
 The plugin follows a layered architecture, separating concerns into distinct modules for services, handlers, and DTOs. This modularity ensures that each component can be developed, tested, and maintained independently.  
 
-**5.1.1Core Classes:**
+**5.1.1 Core Classes:**
 
 **• IUrlGenerationService:** This abstract class defines the core functionality for generating encoded URLs, specifically for WhatsApp messages. It ensures flexibility by allowing customization of the URL encoding process, making it adaptable for various use cases in the future.  
 
@@ -109,9 +109,11 @@ It offers:
 ![Picture3](https://github.com/user-attachments/assets/48570b4a-b5f5-4842-90f4-3087d8d62bac)
 
 **• WhatsAppSendingResultDto:** A DTO that represents the result of a WhatsApp message operation.  
+
 **• Properties:**  
-	**• launchingStatus:** Indicates if WhatsApp was successfully launched.  
-	**• message:** Contains the success or error message.  
+
+   **• launchingStatus:** Indicates if WhatsApp was successfully launched.  
+   **• message:** Contains the success or error message.  
 
 **• toMap Method:** Serializes the object into a map for easy storage or transmission.  
 
