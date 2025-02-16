@@ -8,9 +8,9 @@ With a simple API and platform abstraction, you can focus on building core app f
 
 **Plugin input parameters from the mobile app developer:**
 
-[message]: The verification message will be sent to the WhatsApp phone number from your app through whatsapp_based_verification.
-[phoneNumber]: The recipient's phone number.
-[callback]: A callback function to handle the result of the message operation.
+ [message]: The verification message will be sent to the WhatsApp phone number from your app through whatsapp_based_verification.
+ [phoneNumber]: The recipient's phone number.
+ [callback]: A callback function to handle the result of the message operation.
 
 **For more information or if you need any support, please communicate via email:**
 
@@ -68,11 +68,8 @@ Key features of the plugin include:
 **• Success:** If WhatsApp launches successfully, the plugin notifies the app via a callback, enabling the user to proceed with verification.
 
 **• Failure:** If WhatsApp fails to launch, the plugin notifies the app of the failure, prompting an error message to the user (e.g., "Failed to launch WhatsApp").
+
 ![Sending Whatsapp verification](https://github.com/user-attachments/assets/52aa634d-65ce-4f02-a505-7a67a91dbf92)
-
-
-
-   <img width="577" hight= "800" alt="image" src="https://github.com/user-attachments/assets/aaad3b78-742b-485f-86b7-ccf3653f3ffc" />
 
  
 
@@ -87,12 +84,12 @@ The plugin follows a layered architecture, separating concerns into distinct mod
 **5.1.1Core Classes:**
 
 **• IUrlGenerationService:** This abstract class defines the core functionality for generating encoded URLs, specifically for WhatsApp messages. It ensures flexibility by allowing customization of the URL encoding process, making it adaptable for various use cases in the future.
- 
+
+ ![Picture1](https://github.com/user-attachments/assets/68b29e18-c5cc-4b86-9451-40147b8afab6)
 
 **• IParsingUriService:** This abstract class defines the core functionality for parsing a given URI string into a standardized (Uri) object. It provides a flexible and modular approach to handle URI parsing, ensuring consistency and adaptability across different use cases.
 
- 
-
+ ![Picture2](https://github.com/user-attachments/assets/58e58881-ba4c-4967-9ca5-c183cf0d52a9)
 
 **• WhatsAppUrlGenerator:** This class implements both the IUrlGenerationService and IParsingUriService interfaces, providing a unified approach for generating and parsing WhatsApp URLs. It offers:
 
@@ -103,24 +100,8 @@ The plugin follows a layered architecture, separating concerns into distinct mod
 **• encodedUrl:** Encodes the message text to ensure proper URL formatting.
 
 **• parseUri:** Parses a given URL string into a Uri object for consistent handling.
-
-
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Picture3](https://github.com/user-attachments/assets/48570b4a-b5f5-4842-90f4-3087d8d62bac)
 
 **• WhatsAppSendingResultDto:** A DTO that represents the result of a WhatsApp message operation.
 **• Properties:**
@@ -129,8 +110,7 @@ The plugin follows a layered architecture, separating concerns into distinct mod
 
 **• toMap Method:** Serializes the object into a map for easy storage or transmission.
 
-
- 
+ ![Picture4](https://github.com/user-attachments/assets/a6a7b245-d6a6-43ae-9d20-629d3791f647)
 
 
 
@@ -142,18 +122,13 @@ The plugin follows a layered architecture, separating concerns into distinct mod
 **• callbackResultHandler Method:** Converts a WhatsAppSendingResultDto into a map for further processing or callback handling.
 **• SendingMessageResultCallback:** A typedef for the callback function that handles the result map.
 
-
- 
-
-
-
-
+![Picture5](https://github.com/user-attachments/assets/8f50d5e9-4f3e-4602-a518-e65e3c591730)
 
 **• IWhatsappLauncherService:** An abstract interface for launching WhatsApp with a pre-filled message.
 
 **• launch Method:** This method defines the contract for launching WhatsApp with a specified message and phone number. It requires a callback function to handle the result of the operation.
 
- 
+ ![Picture6](https://github.com/user-attachments/assets/bbd6f8b5-6d9f-40db-86f0-bfc9d17ee858)
 
 
 **• WhatsappLauncherService: A service responsible for launching WhatsApp with a pre-filled message.
@@ -162,7 +137,8 @@ The plugin follows a layered architecture, separating concerns into distinct mod
 • Returns the result via a callback function, using the WhatsAppMessageResultHandler to process the result.
 • Handles errors gracefully by invoking the callback with a failure message if launching WhatsApp fails.
 
- 
+ ![Picture7](https://github.com/user-attachments/assets/a9b6f0f9-ff68-49b4-9d3f-4405f6d4299b)
+
 
 **5.1.3 Factory Design Pattern:**
 
@@ -171,10 +147,7 @@ The plugin follows a layered architecture, separating concerns into distinct mod
 • Promotes separation of concerns and ensures better testability by encapsulating the setup process for WhatsApp messaging functionality.
 • Returns a fully configured WhatsappSendingMessage instance, ready for handling WhatsApp-based actions.
 
- 
-
-
-
+![Picture8](https://github.com/user-attachments/assets/dd035c6a-39a7-40e0-9c5a-7e9e322e82ba)
 
 
 
@@ -190,6 +163,8 @@ The plugin follows a layered architecture, separating concerns into distinct mod
 
 **• Core Functionality:** Offers sendingVerificationMessageViaWhatsApp to send a verification message via WhatsApp, taking the message, recipient’s phone number, and a callback to handle the result.
 
+![Picture9](https://github.com/user-attachments/assets/7541c8bc-689e-4430-826d-095ae4211254)
+
 
  
 **6. Example of Usage**
@@ -198,26 +173,34 @@ Integrating the WhatsApp-based Verification plugin into your Flutter application
 
 **Step 1: Add Android Permissions:**
 First, add uses-Permissions to your AndroidManifest.xml file:
- 
+
+ ![Picture10](https://github.com/user-attachments/assets/ceb0303b-bc21-48f2-8498-369153fe5bda)
 
 **Step 2: Add Dependency:**
 Add the plugin to your pubspec.yaml file:
- 
-Make sure to run flutter pub get to install the package.
+
+ ![Picture11](https://github.com/user-attachments/assets/f391fd61-ac56-4044-8cab-bba9ac4dcb4e)
+
+Make sure to run **flutter pub get** to install the package.
 
 **Step 3: Import the Plugin:**
 In your Dart file, import the plugin:
+
+![Picture12](https://github.com/user-attachments/assets/21efee03-1bce-408b-9352-4c3b781a37a9)
  
 **Step 4: Send verification message:**
 To send a Verification message via WhatsApp, use the whatsappSendingMessageService class. Here’s how you can send a verification message using the plugin: 
 
- 
- 
+ ![Picture13](https://github.com/user-attachments/assets/53abd1b8-1096-4346-a36e-5df9a37acaf5)
+
+
 
 
 
 **Step 6: Handling Results**
 The callback function in the verifyMessage method provides a result map, which contains the status of the WhatsApp launching operation and a launching message body. You can use this information to manage the results effectively in your application.
+
+![Picture14](https://github.com/user-attachments/assets/f296f002-627c-48ec-b98e-4c72c9e67a5c)
 
 
 
